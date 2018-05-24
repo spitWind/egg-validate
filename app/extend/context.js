@@ -14,6 +14,7 @@ module.exports = {
       this.throw(422, 'Validation Failed', {
         code: 'invalid_param',
         errors,
+        rules, data
       });
     }
   },
